@@ -5,57 +5,21 @@ const myLoadTime = 2000;
 
 // reset variables
 let myData = null;
-
 let myApp = null;
 
 
 
-/* kicks off app when the DOM is loaded */
+/* starts app when the DOM is loaded */
 window.addEventListener("load", initApp);
 
 
+// init app er den funktion der kickstarter din app når DOM er loaded.
 function initApp() {
     fetchData(); // starter hentning af data. 
     myApp = document.getElementById('app'); // vi finder det tag voress app skal leve i. kaldet app
-    createLoadingScreen(); // bygger loading screen i DOM.
 }
 
-
-function createLoadingScreen() {
-    // byg loading screen her med html dom elementer. og evt et animeret gif eller billede. i vores app tag.
-
-}
-
-
-function initGallery(dataRecived) {
-    // kaldes fra fetchData når data er klar. 
-    // set myData variablen til det modtagne data, så det er tilgængelig for alle funktioner
-    //kald funktionen resetGallery for at slette indhold i app tagget, som er indeholdt i myApp.
-    // kald en funktion der kan bygge dit galleri. den hedder buildGallery
-
-}
-
-
-function resetGallery() {
-    // skriv kode her der kan slette alt html i app tagget husk det er indeholdt i  myApp
-
-}
-
-function buildGallery() {
-
-    /* brug map funktionen paa vores myData for at finde data for hvert enkelt dyr, og sende det til en funktion der
-    kan bygge dit galleri kort for dyret. funktionen hedder buildCard, og har brugfor data for dyret*/
-}
-
-function buildCard(myAnimalData) {
-    /* skriv kode der kan vise data fra myAnimalData i DOM
-    husk at bruge createElement og appendChild funktionerne til at bygge semantisk korrekt HTML (se evt codelab om dom elementer opgave 4)
-    */
-
-
-}
-
-
+/* du skal her skrive din kode, udfra flowchart og kodebeskrivelse i issues her i dette repo.
 
 
 
